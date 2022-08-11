@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: black;
+  background: linear-gradient(180deg, black 21%, #a20b0e 75%, #ffa600 100%);
+  font-family: 'quicksand', sans-serif; }
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -65,7 +76,9 @@
   .container .tituloBienvenida {
     grid-column: 1/6;
     color: #ffffff;
-    border: none; }
+    border: none;
+    display: flex;
+    flex-direction: column; }
     .container .tituloBienvenida h1 {
       padding: 20px 0;
       text-align: center;
@@ -93,7 +106,7 @@
       padding: 10px; }
 
 .container .content {
-  grid-column: span 3;
+  grid-column: 1/4;
   grid-row: span 3;
   justify-content: center;
   align-items: center;
@@ -136,3 +149,111 @@
       background-color: orangered;
       border-color: #ffffff;
       transition-duration: 1.5s; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
+  display: grid;
+  gap: 1.3em;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  padding: 20px;
+  grid-column: 1/-1;
+  color: #ffffff;
+  border: none; }
+  .container aside {
+    padding: 20px;
+    border: 1px solid crimson;
+    grid-column: auto;
+    grid-row-start: span 3;
+    grid-row-end: span 6;
+    color: crimson;
+    background-color: black; }
+    .container aside h2 {
+      color: crimson;
+      font-family: 'Righteous', cursive;
+      font-size: 35px;
+      font-style: italic;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      margin: 20px; }
+    .container aside div {
+      color: orangered;
+      font-family: 'Righteous', cursive;
+      font-size: 20px;
+      font-weight: 500px;
+      font-style: normal;
+      letter-spacing: 5px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px; }
+      .container aside div img {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-top: 5px; }
+      .container aside div p {
+        color: white;
+        font-family: 'quicksand', sans-serif;
+        font-size: 20px;
+        font-weight: 500px;
+        font-style: normal;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px; }
+      .container aside div a {
+        text-decoration: none;
+        color: orange;
+        text-align: center;
+        font-weight: bolder;
+        font-family: 'Quicksand', sans-serif; }
+        .container aside div a:hover {
+          font-size: 25px;
+          letter-spacing: 1px;
+          transition-duration: 0.5s; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
+  display: grid;
+  gap: 1.3em;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  padding: 20px;
+  grid-column: 1/-1;
+  color: #ffffff;
+  border: none;
+  padding: 20px; }
+  .container footer {
+    grid-column: 1/-1;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0; }
+    .container footer h4 {
+      text-align: center;
+      padding: 25px;
+      font-family: 'Righteous', cursive;
+      font-size: 30px;
+      color: orangered; }
+    .container footer p {
+      color: orange;
+      text-align: center;
+      font-weight: bolder;
+      font-family: 'Quicksand', sans-serif; }
+    .container footer .redes img {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: row; }
+      .container footer .redes img:hover {
+        transform: scale(1.2); }
