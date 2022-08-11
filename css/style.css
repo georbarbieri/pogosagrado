@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
+  display: grid;
+  gap: 1.3em;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  padding: 20px;
+  grid-column: 1/-1;
+  color: #ffffff;
+  border: none; }
+  .container header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 45px;
+    background-color: black; }
+    .container header img {
+      max-width: 200px;
+      animation: imagen 2000ms 1; }
+
+@keyframes imagen {
+  0% {
+    width: 0px; }
+  60% {
+    width: 270px; }
+  100% {
+    width: 200px; } }
+    .container header nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: black; }
+      .container header nav .navbar-toggler {
+        color: crimson;
+        border-color: crimson;
+        text-shadow: white; }
+      .container header nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px;
+        text-decoration: none;
+        color: orangered;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: space-between; }
+        .container header nav ul li:hover {
+          text-decoration: overline;
+          text-decoration-color: white;
+          transform: scale(1.2);
+          color: orange; }
+        .container header nav ul li a {
+          text-decoration: none;
+          color: orangered;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: 'Quicksand', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  .container .tituloBienvenida {
+    grid-column: 1/6;
+    color: #ffffff;
+    border: none; }
+    .container .tituloBienvenida h1 {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 60px;
+      color: crimson;
+      font-family: 'Righteous', cursive;
+      animation: compress 1500ms 1; }
+
+@keyframes compress {
+  0% {
+    letter-spacing: 20px; }
+  60% {
+    letter-spacing: -2px; }
+  100% {
+    letter-spacing: 1px; } }
+    .container .tituloBienvenida p {
+      color: orangered;
+      font-size: 25px;
+      font-weight: 700;
+      font-style: oblique;
+      font-family: 'Righteous', cursive;
+      letter-spacing: 5px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px; }
+
+.container .content {
+  grid-column: span 3;
+  grid-row: span 3;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .container .content h2 {
+    color: crimson;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px; }
+  .container .content p {
+    color: aliceblue;
+    font-size: 25px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    margin: 30px; }
+  .container .content a {
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-family: 'Righteous', cursive;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 9px;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: white;
+    transition-property: 1.5s; }
+    .container .content a:hover {
+      background-color: orangered;
+      border-color: #ffffff;
+      transition-duration: 1.5s; }
