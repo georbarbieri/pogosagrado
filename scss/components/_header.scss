@@ -76,110 +76,142 @@
     }
     .tituloBienvenida {
         grid-column: 1/6;
-    color: #ffffff;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    h1 {
-        padding: 20px 0;
-        text-align: center;
-        font-size: 60px;
-        color: crimson;
-        font-family: 'Righteous', cursive;
-        animation: compress 1500ms 1;
-        @keyframes compress {
-            0% {
-                letter-spacing: 20px;
-            }
-            60% {
-                letter-spacing: -2px;
-            }
-            100% {
-                letter-spacing: 1px;
-            }}
-        }
-        p {
-
-            color: orangered;
-            font-size: 25px;
-            font-weight: 700;
-            font-style: oblique;
-            font-family: 'Righteous', cursive;
-            letter-spacing: 5px;
+        color: #ffffff;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            padding: 20px 0;
             text-align: center;
-            margin: 10px;
-            padding: 10px;}
+            font-size: 60px;
+            color: crimson;
+            font-family: 'Righteous', cursive;
+            animation: compress 1500ms 1;
+            @keyframes compress {
+                0% {
+                    letter-spacing: 20px;
+                }
+                60% {
+                    letter-spacing: -2px;
+                }
+                100% {
+                    letter-spacing: 1px;
+                }}
+            }
+            p {
+
+                color: orangered;
+                font-size: 25px;
+                font-weight: 700;
+                font-style: oblique;
+                font-family: 'Righteous', cursive;
+                letter-spacing: 5px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;}
+            }
+            
+    }
+
+.container1{
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 45px;
+        background-color: black;
+        img {
+            max-width: 200px; 
+            animation: imagen 2000ms 1;
+            @keyframes imagen {
+                0% {
+                    width: 0px;
+                }
+            
+                60% {
+                    width: 270px;
+                }
+            
+                100% {
+                    width: 200px;
+                }
+            
+            }
         }
-        @media screen and (max-width: 768px) {
-            .container header {
-                display: flex;
-                flex-direction: column;
-    
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            .navbar-toggler {
+                color: crimson;
+                border-color: crimson;
+                text-shadow: white;
             }
-    
-            .container1 header {
-                display: flex;
-                flex-direction: column;
+            ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 20px;
+                text-decoration: none;
+                color: orangered;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Quicksand', sans-serif;
+                justify-content: space-between;
+                &:hover {
+                    text-decoration: overline;
+                    text-decoration-color: white;
+                    transform: scale(1.2);
+                    color: orange;}
+                a {
+                    text-decoration: none;
+                    color: orangered;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: 'Quicksand', sans-serif;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;}
+            
             }
-    
-            .container .content {
-                grid-column: 1 / -1;
-            }
-    
-            .container1 .content1 {
-                grid-column: 1 / -1;
-            }
-    
-            .container .sidebar {
-                grid-column: 1 / -1;
-            }
-    
-            .container .sidebar div img {
-                width: 100%;
-            }
-    
-            .container footer .redes {
-                grid-column: 1/-1;
-                display: flex;
-                flex-wrap: wrap;
-            }
-    
-            .footer .redes {
-                grid-column: 1/-1;
-                display: flex;
-                flex-wrap: wrap;
-            }
-    
-            .container iframe {
-                width: 100%;
-                height: 150%;
-            }
-    
-            .content a {
-                display: flex;
-                flex-direction: column;
-    
-                justify-content: center;
-    
-            }
-    
-            .container content a {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-    
-            .container1 {
-                display: flex;
-                flex-wrap: wrap;
-            }
-    
-            .container1 .conten3 {
-                padding: 10px;
-                width: 70%;
-                margin: 1.6rem;
-            }
-    
-    
         }
-}
+    }
+    .tituloBienvenida {
+        grid-column: 1/6;
+        color: #ffffff;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 60px;
+            color: crimson;
+            font-family: 'Righteous', cursive;
+            animation: compress 1500ms 1;
+            @keyframes compress {
+                0% {
+                    letter-spacing: 20px;
+                }
+                60% {
+                    letter-spacing: -2px;
+                }
+                100% {
+                    letter-spacing: 1px;
+                }}
+            }
+            p {
+
+                color: orangered;
+                font-size: 25px;
+                font-weight: 700;
+                font-style: oblique;
+                font-family: 'Righteous', cursive;
+                letter-spacing: 5px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;}
+            }
+    }
