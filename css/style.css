@@ -64,6 +64,7 @@ body {
   color: #ffffff;
   border: none; }
   .container header {
+    grid-column: 1/-1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,47 +147,6 @@ body {
       text-align: center;
       margin: 10px;
       padding: 10px; }
-  @media screen and (max-width: 768px) {
-    .container .container header {
-      display: flex;
-      flex-direction: column; }
-    .container .container1 header {
-      display: flex;
-      flex-direction: column; }
-    .container .container .content {
-      grid-column: 1 / -1; }
-    .container .container1 .content1 {
-      grid-column: 1 / -1; }
-    .container .container .sidebar {
-      grid-column: 1 / -1; }
-    .container .container .sidebar div img {
-      width: 100%; }
-    .container .container footer .redes {
-      grid-column: 1/-1;
-      display: flex;
-      flex-wrap: wrap; }
-    .container .footer .redes {
-      grid-column: 1/-1;
-      display: flex;
-      flex-wrap: wrap; }
-    .container .container iframe {
-      width: 100%;
-      height: 150%; }
-    .container .content a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    .container .container content a {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .container .container1 {
-      display: flex;
-      flex-wrap: wrap; }
-    .container .container1 .conten3 {
-      padding: 10px;
-      width: 70%;
-      margin: 1.6rem; } }
 
 .container .content {
   grid-column: 1/4;
