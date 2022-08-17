@@ -866,11 +866,6 @@ body {
     font-family: 'quicksand', sans-serif
 }
 
-.container1 .carousel {
-    margin: 20px;
-    padding: 20px;
-}
-
 .container1 .content3 .comida {
     background-image: url(../img/publico.jpg);
     background-repeat: no-repeat;

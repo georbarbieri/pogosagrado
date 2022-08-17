@@ -1,3 +1,4 @@
+@import "../base/extends";
 .container .content {
     grid-column: 1/4;
     grid-row: span 3;
@@ -86,92 +87,33 @@
         }
         .carta{ 
             h2 {
-            color: crimson;
-            font-family: 'Righteous', cursive;
-            font-size: 30px;
-            font-weight: bold;
-            font-style: italic;
-            letter-spacing: 10px;
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
+            @extend %titulo;
             }
             img {
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
+            @extend %imagen;
             }
             a {
-            color: white;
-            width: 150px;
-            height: 30px;
-            font-family: 'quicksand', sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            padding-bottom: 20px;
-            margin-top: 50px;
-            margin-bottom: 20px;
+            @extend %enlace;
             }
             p{
-                color: white;
-                font-family: 'quicksand', sans-serif;
-                font-size: 20px;
-                font-weight: 500px;
-                font-style: normal;
-                letter-spacing: 5px;
-                text-align: center;
-                margin: 10px;
-                padding: 10px;}
+                @extend %parrafo;}
             &:hover {
                 transform: scale(1.1);
                 transition-duration: 1s;}
         }
         .reservas{ 
             h2 {
-            color: crimson;
-            font-family: 'Righteous', cursive;
-            font-size: 30px;
-            font-weight: bold;
-            font-style: italic;
-            letter-spacing: 10px;
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
-            }
+                @extend %titulo;
+                }
             img {
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
-            }
+                @extend %imagen;
+                }
             a {
-            color: white;
-            width: 150px;
-            height: 30px;
-            font-family: 'quicksand', sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            padding-bottom: 20px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            }
+                @extend %enlace;
+                }
             p{
-                color: white;
-                font-family: 'quicksand', sans-serif;
-                font-size: 20px;
-                font-weight: 500px;
-                font-style: normal;
-                letter-spacing: 5px;
-                text-align: center;
-                margin: 10px;
-                padding: 10px;}
+                    @extend %parrafo;
+                }
             &:hover{
             transform: scale(1.1);
             transition-duration: 1s;
@@ -179,47 +121,16 @@
         }
         .ubicacion{ 
             h2 {
-            color: crimson;
-            font-family: 'Righteous', cursive;
-            font-size: 30px;
-            font-weight: bold;
-            font-style: italic;
-            letter-spacing: 10px;
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
-            }
+                @extend %titulo;
+                }
             img {
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
-            }
+                @extend %imagen;
+                }
             a {
-            color: white;
-            width: 150px;
-            height: 30px;
-            font-family: 'quicksand', sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            padding-bottom: 20px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            }
+                @extend %enlace;
+                }
             p{
-                color: white;
-                font-family: 'quicksand', sans-serif;
-                font-size: 20px;
-                font-weight: 500px;
-                font-style: normal;
-                letter-spacing: 5px;
-                text-align: center;
-                margin: 10px;
-                padding: 10px;
-            }
+                @extend %parrafo;}
             &:hover {
                 transform: scale(1.1);
                 transition-duration: 1s;
@@ -227,47 +138,16 @@
         }
         .hora{ 
             h2 {
-            color: crimson;
-            font-family: 'Righteous', cursive;
-            font-size: 30px;
-            font-weight: bold;
-            font-style: italic;
-            letter-spacing: 10px;
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
-            }
+                @extend %titulo;
+                }
             img {
-            width: 100%;
-            max-width: 400px;
-            height: 200px;
-            }
+                @extend %imagen;
+                }
             a {
-            color: white;
-            width: 150px;
-            height: 30px;
-            font-family: 'quicksand', sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            padding-bottom: 20px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            }
+                @extend %enlace;
+                }
             p{
-                color: white;
-                font-family: 'quicksand', sans-serif;
-                font-size: 20px;
-                font-weight: 500px;
-                font-style: normal;
-                letter-spacing: 5px;
-                text-align: center;
-                margin: 10px;
-                padding: 10px;
-            }
+                @extend %parrafo;}
             &:hover{
             transform: scale(1.1);
             transition-duration: 1s;
@@ -276,3 +156,83 @@
         }
     }
 }
+.container1{
+    .content3{
+        grid-column: 1/6;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Righteous', cursive;
+        margin: 10px;
+        .carta p{
+            grid-column: 1/6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'quicksand', sans-serif
+        }
+        .what {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 50px;
+            font-size: 25px;
+            font-style: normal;
+            text-align: center;
+            font-weight: 700;
+            margin: 50px;
+            h2{
+                display: flex;
+                flex-direction: column;}
+            img {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 20px;
+                margin: 20px;
+            }
+            .llegar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 50px;
+                color: aliceblue;
+                font-size: 25px;
+                font-style: normal;
+                text-align: center;
+                font-weight: 700;
+                h2{
+                    color: orangered;
+                    font-family: 'Righteous', cursive;
+                    font-size: 40px;
+                    font-style: italic;
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 30px;
+                }
+                p{
+                    width: 250px;
+                    color: aliceblue;
+                    font-size: 20px;
+                    font-style: normal;
+                    text-align: center;
+                    font-weight: 700;
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
