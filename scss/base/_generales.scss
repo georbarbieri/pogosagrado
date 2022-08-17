@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');
-
+@import "./maps";
 
 * {
     margin: 0;
@@ -9,9 +9,33 @@
 
 body {
     background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 21%, rgba(162, 11, 14, 1) 75%, rgba(255, 166, 0, 1) 100%);
+    background: map-get($estilos , gradiente );
     font-family: 'quicksand', sans-serif;
+}
+.container {
+    width: map-get($estilos , ancho );
+    max-width: map-get($estilos , maximo);
+    margin: map-get($estilos , margen);
+    display: map-get($estilos , layaut);
+    gap: map-get($estilos , gap);
+    grid-template-columns: map-get($estilos, grid);
+    justify-content: map-get($estilos, centro);
+    padding:map-get($estilos, espacio);
+    grid-column: map-get($estilos, column);
+    border: map-get($estilos, borde);
 
+}
+.container1{
+    width: map-get($estilos , ancho );
+    max-width: map-get($estilos , maximo);
+    margin: map-get($estilos , margen);
+    display: map-get($estilos , layaut);
+    gap: map-get($estilos , gap);
+    grid-template-columns: map-get($estilos, grid);
+    justify-content: map-get($estilos, centro);
+    padding:map-get($estilos, espacio);
+    grid-column: map-get($estilos, column);
+    border: map-get($estilos, borde);
 }
 @media screen and (max-width: 768px) {
     .container header {

@@ -1,0 +1,42 @@
+%imagen{
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+}
+%enlace{
+            color: white;
+            width: 150px;
+            height: 30px;
+            font-family: 'quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+}
+%parrafo{
+                color: white;
+                font-family: 'quicksand', sans-serif;
+                font-size: 20px;
+                font-weight: 500px;
+                font-style: normal;
+                letter-spacing: 5px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+}
+%titulo{
+            color: crimson;
+            font-family: 'Righteous', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 10px;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+}
