@@ -318,3 +318,90 @@
         }
     }
 }
+
+.container1{
+    .content3{
+        grid-column: 1/6;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Righteous', cursive;
+        margin: 10px;
+        .bebidas {
+            h2{
+            color: aliceblue;
+            font-family: 'Righteous', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 10px;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            }
+            p{
+                grid-column: 1/6;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                font-size: 25px;
+                font-family: 'quicksand', sans-serif
+                }
+        }
+        .comida{
+            background-image: url(../img/publico.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            h2{
+                display: grid;
+                grid-column: 1/-1;
+                animation: espec 3500ms infinite;
+                }
+
+                @keyframes espec {
+                    0% {
+                    letter-spacing: 10px;
+                }
+
+                    60% {
+                    letter-spacing: -2px;
+                }
+
+                    100% {
+                    letter-spacing: 10px;
+                }
+                }
+            .rata {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                text-align: center;
+                align-items: center;
+            }
+            .ajeno {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                text-align: center;
+                align-items: center;
+            }
+            .profecia{
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                text-align: center;
+                align-items: center;
+            }
+            .ruso {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+    
+    }

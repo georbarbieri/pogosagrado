@@ -621,6 +621,73 @@ body {
       font-weight: bold;
       background-color: black; }
 
+.container1 .content3 {
+  grid-column: 1/6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  margin: 10px; }
+  .container1 .content3 .bebidas h2 {
+    color: aliceblue;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px; }
+  .container1 .content3 .bebidas p {
+    grid-column: 1/6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'quicksand', sans-serif; }
+  .container1 .content3 .comida {
+    background-image: url(../img/publico.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .container1 .content3 .comida h2 {
+      display: grid;
+      grid-column: 1/-1;
+      animation: espec 3500ms infinite; }
+
+@keyframes espec {
+  0% {
+    letter-spacing: 10px; }
+  60% {
+    letter-spacing: -2px; }
+  100% {
+    letter-spacing: 10px; } }
+    .container1 .content3 .comida .rata {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      text-align: center;
+      align-items: center; }
+    .container1 .content3 .comida .ajeno {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      text-align: center;
+      align-items: center; }
+    .container1 .content3 .comida .profecia {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      text-align: center;
+      align-items: center; }
+    .container1 .content3 .comida .ruso {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      text-align: center;
+      align-items: center; }
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -816,7 +883,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: row;
-  grid-column: 1/6;
+  grid-column: 1/-1;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 0; }
