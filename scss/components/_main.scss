@@ -1,5 +1,8 @@
 @import "../base/extends";
 @import "../base/mixins";
+ 
+
+/*Pagina de Index*/
 .container .content {
     grid-column: 1/4;
     grid-row: span 3;
@@ -44,7 +47,7 @@
         }
     }
 }
-
+/*pagina de shows*/
 .container1{
     .content2{
         width: 100%;
@@ -151,6 +154,8 @@
         }
     }
 }
+
+/*pagina de contacto*/
 .container1{
     .content3{
         grid-column: 1/6;
@@ -227,7 +232,7 @@
             }
         }
     }
-
+/* pagina de carta*/
 .container1 .content1 {
     .gusto{
         h2 {
@@ -318,7 +323,7 @@
         }
     }
 }
-
+/* pagina de acerca*/
 .container1{
     .content3{
         grid-column: 1/6;
