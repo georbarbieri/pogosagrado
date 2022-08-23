@@ -544,6 +544,83 @@ body {
         display: flex;
         flex-direction: row; }
 
+.container1 .content1 .gusto h2 {
+  color: aliceblue;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px; }
+
+.container1 .content1 .gusto p {
+  color: aliceblue;
+  font-size: 25px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px; }
+
+.container1 .content1 .accordion .accordion-item1 {
+  grid-column: 1/-1;
+  color: crimson;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+  background-image: url(../img/barratragos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .container1 .content1 .accordion .accordion-item1 ul {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    text-align: justify; }
+    .container1 .content1 .accordion .accordion-item1 ul li:hover {
+      text-decoration: underline;
+      text-decoration-color: white;
+      transform: scale(1.2);
+      font-weight: bold;
+      background-color: black; }
+
+.container1 .content1 .accordion .accordion-item2 {
+  grid-column: 1/-1;
+  color: crimson;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+  background-image: url(../img/barvegano.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .container1 .content1 .accordion .accordion-item2 ul {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    text-align: justify; }
+    .container1 .content1 .accordion .accordion-item2 ul li:hover {
+      text-decoration: underline;
+      text-decoration-color: white;
+      transform: scale(1.2);
+      font-weight: bold;
+      background-color: black; }
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -727,6 +804,29 @@ body {
     font-size: 30px;
     color: orangered; }
   .container1 footer img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: row; }
+
+footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  grid-column: 1/6;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0; }
+  footer h3 {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: orangered; }
+  footer img {
     width: 80px;
     height: 80px;
     display: flex;
