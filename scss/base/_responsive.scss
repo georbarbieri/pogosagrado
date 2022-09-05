@@ -2,16 +2,24 @@
     .container header {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
 
     }
 
     .container1 header {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
     .container .content {
-        grid-column: 1 / -1;
+        grid-column: 1 / 6;
+        grid-row: auto;
+        
     }
 
     .container1 .content1 {
