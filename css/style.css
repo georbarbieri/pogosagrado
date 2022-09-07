@@ -82,47 +82,49 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center; }
-  .container1 header {
+  .container .content {
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-items: center; }
-  .container .content {
-    grid-column: 1 / 6;
-    grid-row: auto; }
-  .container1 .content1 {
-    grid-column: 1 / -1; }
+    text-align: center; }
+    .container .content a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center; }
   .container .sidebar {
     grid-column: 1 / -1; }
-  .container .sidebar div img {
-    width: 100%; }
+    .container .sidebar div img {
+      width: 100%; }
   .container footer .redes {
-    grid-column: 1/-1;
-    display: flex;
-    flex-wrap: wrap; }
-  .footer .redes {
     grid-column: 1/-1;
     display: flex;
     flex-wrap: wrap; }
   .container iframe {
     width: 100%;
     height: 150%; }
-  .content a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .container content a {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
   .container1 {
     display: flex;
     flex-wrap: wrap; }
-  .container1 .conten3 {
-    padding: 10px;
-    width: 70%;
-    margin: 1.6rem; } }
+    .container1 header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-items: center; }
+    .container1 .content1 {
+      grid-column: 1 / -1; }
+    .container1 .conten3 {
+      padding: 10px;
+      width: 70%;
+      margin: 1.6rem; }
+  .footer .redes {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap; } }
 
 .container1 .content2 .carta img, .container1 .content2 .reservas img, .container1 .content2 .ubicacion img, .container1 .content2 .hora img {
   width: 100%;
@@ -395,7 +397,6 @@ body {
 
 /*Pagina de Index*/
 .container .content {
-  grid-column: 1/4;
   grid-row: span 3;
   justify-content: center;
   align-items: center;
@@ -718,7 +719,7 @@ body {
   .container aside {
     padding: 20px;
     border: 1px solid crimson;
-    grid-column: 4/6;
+    grid-column: 3/6;
     grid-row-start: span 3;
     grid-row-end: span 6;
     color: crimson;

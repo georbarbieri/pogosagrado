@@ -4,7 +4,6 @@
 
 /*Pagina de Index*/
 .container .content {
-    grid-column: 1/4;
     grid-row: span 3;
     @include flex (center, center, center);
     h2 {

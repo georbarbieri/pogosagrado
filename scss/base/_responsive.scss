@@ -1,80 +1,58 @@
 @media screen and (max-width: 768px) {
-    .container header {
+    .container {
+        header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        justify-items: center;
-
-    }
-
-    .container1 header {
+        justify-items: center;}
+        .content {
+        grid-column: 1 / -1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        justify-items: center;
+        text-align: center;
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;}
+        }
+        .sidebar {
+            grid-column: 1 / -1;
+            div img {
+            width: 100%;}}
+        footer .redes {
+            grid-column: 1/-1;
+            display: flex;
+            flex-wrap: wrap;}
+        iframe {
+            width: 100%;
+            height: 150%;}
     }
-
-    .container .content {
-        grid-column: 1 / 6;
-        grid-row: auto;
-        
-    }
-
-    .container1 .content1 {
-        grid-column: 1 / -1;
-    }
-
-    .container .sidebar {
-        grid-column: 1 / -1;
-    }
-
-    .container .sidebar div img {
-        width: 100%;
-    }
-
-    .container footer .redes {
-        grid-column: 1/-1;
+    .container1 {
         display: flex;
         flex-wrap: wrap;
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;}
+        .content1 {
+            grid-column: 1 / -1;}
+        .conten3 {
+            padding: 10px;
+            width: 70%;
+            margin: 1.6rem;
     }
-
+    }
     .footer .redes {
         grid-column: 1/-1;
         display: flex;
         flex-wrap: wrap;
     }
-
-    .container iframe {
-        width: 100%;
-        height: 150%;
-    }
-
-    .content a {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-
-    }
-
-    .container content a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .container1 .conten3 {
-        padding: 10px;
-        width: 70%;
-        margin: 1.6rem;
-    }
-
 
 }
