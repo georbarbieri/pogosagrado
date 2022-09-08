@@ -87,8 +87,9 @@
                     text-align: center;
                     font-weight: bold;
                     text-decoration: underline;
-                    margin: 20px;}
+                    margin: 40px;}
                 div {
+                    margin-top: 20px;
                     h3{
                         color: orangered;
                         font-family: 'Righteous', cursive;
@@ -113,7 +114,8 @@
                     }
                     img {
                         display: block;
-                        width: 100%;
+                        width: 90%;
+                        margin: auto;
                         margin-top: 5px;
                         justify-content: center;
                         align-items: center;
@@ -126,16 +128,18 @@
                 .entrada {
                     a{
                         grid-column: 4/6;
-                    text-decoration: none;
-                    color: orange;
-                    text-align: center;
-                    justify-content: center;
-                    font-weight: bolder;
-                    font-family: 'Quicksand', sans-serif;
-                    &:hover{
-                        transform: scale(1.1);
-                        transition-duration: 1s;
-                        }
+                        text-decoration: none;
+                        color: orange;
+                        margin: 25%;
+                        text-align: center;
+                        justify-content: center;
+                        font-weight: bolder;
+                        font-family: 'Quicksand', sans-serif;
+                        padding: 15px;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition-duration: 1s;
+                            }
                     }
                 }
         }

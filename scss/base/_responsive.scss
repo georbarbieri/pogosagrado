@@ -8,13 +8,18 @@
         justify-items: center;}
         .content {
         grid-column: 1 / -1;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         a {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            justify-items: center;}
+            justify-items: center;
+            margin: auto;}
         }
         .sidebar {
             grid-column: 1 / -1;
@@ -42,13 +47,9 @@
         .conten3 {
             padding: 10px;
             width: 70%;
-            margin: 1.6rem;
+            margin: 1.6rem;}
+        footer .redes {
+            display: flex;
+            flex-wrap: wrap;
     }
-    }
-    .footer .redes {
-        grid-column: 1/-1;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-}
+}}
