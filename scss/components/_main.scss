@@ -233,8 +233,18 @@
 
 
 /* pagina de carta*/
-.container 
-    {.content1 {
+.container {
+    .content1 {
+        width: 100%;
+        max-width: 1000px;
+        display: grid;
+        gap: 1.6em auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        @include flex(center, center, center);
+        grid-column: 1/-1;
+        grid-row: span 3;
     .gusto{
         h2 {
             color: aliceblue;
