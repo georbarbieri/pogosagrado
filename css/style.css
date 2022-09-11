@@ -508,7 +508,7 @@ body {
     margin: 30px; }
   .container .content1 .accordion .accordion-item1 {
     grid-column: 1/-1;
-    color: crimson;
+    color: black;
     padding: 20px 0;
     text-align: center;
     font-size: 25px;
@@ -519,16 +519,14 @@ body {
     align-items: center;
     width: 1000px;
     height: 600px;
-    background-image: url(../img/barratragos.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background: linear-gradient(90deg, black 4%, #db0808 47%, #ffbb00 100%); }
     .container .content1 .accordion .accordion-item1 ul {
       font-size: 20px;
       font-family: 'Quicksand', sans-serif;
       padding: 20px;
       text-align: justify; }
       .container .content1 .accordion .accordion-item1 ul li:hover {
+        color: aliceblue;
         text-decoration: underline;
         text-decoration-color: white;
         transform: scale(1.2);
@@ -536,7 +534,7 @@ body {
         background-color: black; }
   .container .content1 .accordion .accordion-item2 {
     grid-column: 1/-1;
-    color: crimson;
+    color: black;
     padding: 20px 0;
     text-align: center;
     font-size: 25px;
@@ -547,16 +545,14 @@ body {
     align-items: center;
     width: 1000px;
     height: 600px;
-    background-image: url(../img/barvegano.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background: linear-gradient(90deg, black 4%, #db0808 47%, #ffbb00 100%); }
     .container .content1 .accordion .accordion-item2 ul {
       font-size: 20px;
       font-family: 'Quicksand', sans-serif;
       padding: 20px;
       text-align: justify; }
       .container .content1 .accordion .accordion-item2 ul li:hover {
+        color: aliceblue;
         text-decoration: underline;
         text-decoration-color: white;
         transform: scale(1.2);
@@ -871,6 +867,7 @@ footer {
         justify-items: center;
         margin: auto; }
     .container .sidebar {
+      margin-top: 330px;
       grid-column: 1 / -1; }
       .container .sidebar div img {
         width: 100%; }
@@ -887,8 +884,13 @@ footer {
       width: 70%;
       margin: 1.6rem; }
       .container .content1 .accordion .accordion-item1 {
-        width: 100%;
-        height: 600px; }
+        grid-column: 1/-1;
+        width: 400px;
+        height: 520px; }
+      .container .content1 .accordion .accordion-item2 {
+        grid-column: 1/-1;
+        width: 400px;
+        height: 520px; }
     .container .conten3 {
       grid-column: 1/-1;
       padding: 10px;
