@@ -33,55 +33,6 @@ body {
   grid-column: -1;
   border: none; }
 
-@media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap; }
-    .container header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-items: center; }
-    .container .content {
-      grid-column: 1 / -1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-      .container .content a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        margin: auto; }
-    .container .sidebar {
-      grid-column: 1 / -1; }
-      .container .sidebar div img {
-        width: 100%; }
-    .container footer .redes {
-      grid-column: 1/-1;
-      display: flex;
-      flex-wrap: wrap; }
-    .container iframe {
-      width: 100%;
-      height: 150%; }
-    .container .content1 {
-      grid-column: 1 / -1;
-      padding: 10px;
-      width: 70%;
-      margin: 1.6rem; }
-      .container .content1 .accordion .accordion-item1 {
-        width: 100%;
-        height: 600px; }
-    .container .conten3 {
-      grid-column: 1/-1;
-      padding: 10px;
-      width: 70%;
-      margin: 1.6rem; } }
-
 .container .content2 .carta img, .container .content2 .reservas img, .container .content2 .ubicacion img, .container .content2 .hora img {
   width: 100%;
   max-width: 400px;
@@ -747,25 +698,37 @@ body {
           transition-duration: 0.5s; }
 
 /*pagina de shows*/
-.container .sidebar1 {
-  grid-column: 4/6;
-  grid-row: span 3;
-  color: crimson;
-  background-color: black;
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
+  display: grid;
+  gap: 1.3em;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
-  align-items: center; }
-  .container .sidebar1 h2 {
+  padding: 20px;
+  grid-column: 1/-1;
+  color: #ffffff;
+  border: none; }
+  .container .sidebar1 {
+    display: block;
+    padding: 20px;
+    border: 1px solid crimson;
+    grid-column: 4/6;
+    grid-row-start: span 3;
+    grid-row-end: span 6;
     color: crimson;
-    font-family: 'Righteous', cursive;
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: 40px; }
-  .container .sidebar1 div {
-    margin-top: 20px; }
-    .container .sidebar1 div h3 {
+    background-color: black; }
+    .container .sidebar1 h2 {
+      color: crimson;
+      font-family: 'Righteous', cursive;
+      font-size: 35px;
+      font-style: italic;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      margin: 20px; }
+    .container .sidebar1 div {
       color: orangered;
       font-family: 'Righteous', cursive;
       font-size: 20px;
@@ -775,39 +738,41 @@ body {
       text-align: center;
       margin: 10px;
       padding: 10px; }
-    .container .sidebar1 div p {
-      color: white;
-      font-family: 'quicksand', sans-serif;
-      font-size: 20px;
-      font-weight: 500px;
-      font-style: normal;
-      letter-spacing: 5px;
-      text-align: center;
-      margin: 10px;
-      padding: 10px; }
-    .container .sidebar1 div img {
-      display: block;
-      width: 90%;
-      margin: auto;
-      margin-top: 5px;
-      justify-content: center;
-      align-items: center; }
-    .container .sidebar1 div:hover {
-      transform: scale(1.1);
-      transition-duration: 1s; }
-  .container .sidebar1 .entrada a {
-    grid-column: 4/6;
-    text-decoration: none;
-    color: orange;
-    margin: 25%;
-    text-align: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-family: 'Quicksand', sans-serif;
-    padding: 15px; }
-    .container .sidebar1 .entrada a:hover {
-      transform: scale(1.1);
-      transition-duration: 1s; }
+      .container .sidebar1 div h3 {
+        color: orangered;
+        font-family: 'Righteous', cursive;
+        font-size: 20px;
+        font-weight: 500px;
+        font-style: normal;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px; }
+      .container .sidebar1 div img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-top: 5px; }
+      .container .sidebar1 div p {
+        color: white;
+        font-family: 'quicksand', sans-serif;
+        font-size: 20px;
+        font-weight: 500px;
+        font-style: normal;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px; }
+      .container .sidebar1 div a {
+        text-decoration: none;
+        color: orange;
+        text-align: center;
+        font-weight: bolder;
+        font-family: 'Quicksand', sans-serif; }
+        .container .sidebar1 div a:hover {
+          font-size: 25px;
+          letter-spacing: 1px;
+          transition-duration: 0.5s; }
 
 /* pagina de index*/
 .container {
@@ -880,3 +845,52 @@ footer {
     flex-direction: row; }
     footer .redes img:hover {
       transform: scale(1.2); }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap; }
+    .container header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-items: center; }
+    .container .content {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .container .content a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin: auto; }
+    .container .sidebar {
+      grid-column: 1 / -1; }
+      .container .sidebar div img {
+        width: 100%; }
+    .container footer .redes {
+      grid-column: 1/-1;
+      display: flex;
+      flex-wrap: wrap; }
+    .container iframe {
+      width: 100%;
+      height: 150%; }
+    .container .content1 {
+      grid-column: 1 / -1;
+      padding: 10px;
+      width: 70%;
+      margin: 1.6rem; }
+      .container .content1 .accordion .accordion-item1 {
+        width: 100%;
+        height: 600px; }
+    .container .conten3 {
+      grid-column: 1/-1;
+      padding: 10px;
+      width: 70%;
+      margin: 1.6rem; } }
