@@ -45,8 +45,8 @@
             align-items: center;
             background-color: black;
             .navbar-toggler {
-                color: crimson;
-                border-color: crimson;
+                background-color: crimson;
+                border-bottom: crimson;
                 text-shadow: white;
             }
             ul li {
@@ -118,6 +118,17 @@
 
     /*paginas de shows, contacto, carta y acerca*/
 .container1{
+    width: 100%;
+    max-width: 1000px;
+    margin: 2em auto;
+    display: grid;
+    gap: 1.3em;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding: 20px;
+    grid-column: 1/-1;
+    color: #ffffff;
+    border: none;
     header {
         grid-column: 1/-1;
         display: flex;
@@ -147,11 +158,12 @@
         nav {
             width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
             background-color: black;
             .navbar-toggler {
                 color: crimson;
+                background-color: crimson;
                 border-color: crimson;
                 text-shadow: white;
             }

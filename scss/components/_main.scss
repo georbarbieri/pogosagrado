@@ -46,7 +46,7 @@
     }
 }
 /*pagina de shows*/
-.container1{
+.container{
     .content2{
         width: 100%;
         max-width: 1000px;
@@ -154,7 +154,7 @@
 }
 
 /*pagina de contacto*/
-.container1{
+.container{
     .content3{
         grid-column: 1/6;
         color: white;
@@ -230,8 +230,11 @@
             }
         }
     }
+
+
 /* pagina de carta*/
-.container1 .content1 {
+.container 
+    {.content1 {
     .gusto{
         h2 {
             color: aliceblue;
@@ -321,8 +324,11 @@
         }
     }
 }
+}
+
+
 /* pagina de acerca*/
-.container1{
+.container{
     .content3{
         grid-column: 1/6;
         color: white;
